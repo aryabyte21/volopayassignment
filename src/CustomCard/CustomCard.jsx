@@ -11,8 +11,10 @@ function CustomCard(props) {
           <Col span={24}>
             <Row>
               <Col span={20}>
-                <Row>{card.name}</Row>
-                <Row>{card.budget_name}</Row>
+                <Row style={{ fontSize: "22px", fontWeight: "800" }}>
+                  {card.name}
+                </Row>
+                <Row style={{ fontSize: "15px" }}>{card.budget_name}</Row>
               </Col>
               <Col span={4}>
                 {card.card_type === "burner" ? (
@@ -31,15 +33,18 @@ function CustomCard(props) {
             <Row>
               <Col span={8}>
                 <Row>Amount</Row>
-                <Row>{card.spent.value + card.available_to_spend.value} {card.available_to_spend.currency}</Row>
+                <Row style={{ fontWeight: "700" }}>
+                  {card.spent.value + card.available_to_spend.value}{" "}
+                  {card.available_to_spend.currency}
+                </Row>
               </Col>
               <Col span={8}>
                 <Row>Frequency</Row>
-                <Row>Amount</Row>
+                <Row style={{ fontWeight: "700" }}>{card.limit}</Row>
               </Col>
               <Col span={8}>
                 <Row>Expiry</Row>
-                <Row>{card.expiry}</Row>
+                <Row style={{ fontWeight: "700" }}>{card.expiry}</Row>
               </Col>
             </Row>
             <Row>

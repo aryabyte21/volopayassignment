@@ -1,3 +1,18 @@
+# Simple react app
+
+In this project I have assumed the userId to be 1 so it shows cards in Your with user having userId 1
+to run it clone the project
+npm i
+npm start
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
