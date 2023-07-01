@@ -20,12 +20,12 @@ function CustomCard(props) {
                 {card.card_type === "burner" ? (
                   <Avatar
                     src={<FireOutlined />}
-                    style={{ backgroundColor: "blue", color: "white" }}
+                    style={{ backgroundColor: "#FFD580", color: "white" }}
                   />
                 ) : (
                   <Avatar
                     src={<RedoOutlined />}
-                    style={{ backgroundColor: "blue", color: "white" }}
+                    style={{ backgroundColor: "#ffb6c1", color: "white" }}
                   />
                 )}
               </Col>

@@ -31,6 +31,7 @@ const mockDB = {
       },
       card_type: "subscription",
       limit: 10,
+      expiry: "19 Feb",
       status: "active",
     },
     {
@@ -46,6 +47,7 @@ const mockDB = {
         currency: "SGD",
       },
       card_type: "subscription",
+      expiry: "9 Oct",
       limit: 200,
       status: "active",
     },
@@ -71,7 +73,7 @@ const mockDB = {
       budget_name: "Budget 5",
       owner_id: 1,
       spent: {
-        value: 20,
+        value: 120,
         currency: "SGD",
       },
       available_to_spend: {
@@ -79,6 +81,7 @@ const mockDB = {
         currency: "SGD",
       },
       card_type: "subscription",
+      expiry: "28 Feb",
       limit: 50,
       status: "inactive",
     },
@@ -87,17 +90,17 @@ const mockDB = {
       budget_name: "Budget 6",
       owner_id: 2,
       spent: {
-        value: 0,
-        currency: "SGD"
+        value: 500,
+        currency: "SGD",
       },
       available_to_spend: {
         value: 1000,
-        currency: "SGD"
+        currency: "SGD",
       },
       card_type: "burner",
       expiry: "1 Dec",
       limit: 100,
-      status: "active"
+      status: "active",
     },
   ],
   page: 1,
