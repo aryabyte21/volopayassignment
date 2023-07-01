@@ -1,24 +1,24 @@
 import React from "react";
 import { Tabs } from "antd";
+import Card from "./CustomCard/CustomCard";
 
 const { TabPane } = Tabs;
 
 const Navbar = () => {
   const handleTabChange = (activeKey) => {
-    // Handle tab change logic here
     console.log("Active Tab:", activeKey);
   };
 
   return (
     <Tabs defaultActiveKey="1" onChange={handleTabChange}>
       <TabPane tab="Your" key="1">
-        Your
+        hello
       </TabPane>
       <TabPane tab="All" key="2">
-      All
+        All
       </TabPane>
       <TabPane tab="blocked" key="3">
-        blocked
+        Blocked
       </TabPane>
     </Tabs>
   );
