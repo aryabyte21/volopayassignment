@@ -5,7 +5,13 @@ function CustomCard(props) {
   const { card } = props;
   console.log("card", card);
   return (
-    <Card style={{ width: 400, marginTop: 16 }}>
+    <Card
+      style={{
+        width: 400,
+        marginTop: 16,
+        boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+      }}
+    >
       <Col>
         <Row>
           <Col span={24}>
